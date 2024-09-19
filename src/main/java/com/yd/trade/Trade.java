@@ -3,10 +3,8 @@ package com.yd.trade;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Trade extends JavaPlugin {
-    private ConfigManager configManager;
 
     public void onEnable() {
-        this.configManager = new ConfigManager(this);
         if (getCommand("trade") != null) {
             getCommand("trade").setExecutor(new TradeCommand(this));
         } else {
