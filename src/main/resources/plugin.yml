@@ -1,0 +1,4 @@
+name: Trade
+version: '${project.version}'
+main: com.yd.trade.Trade
+api-version: '1.20'
